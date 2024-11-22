@@ -1,0 +1,412 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100%;
+    width: 100%;
+}
+.main{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+nav{
+    width: 100%;
+    height: 90px;
+    background-color: #f7d4d7;
+    align-items: center;
+    display:flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #fbb6bc;
+    position: fixed;
+}
+nav .img{
+    margin-left: 10vw;
+}
+nav .menu ul{
+    display: flex;
+    list-style: none;
+    gap: 4vw;
+    margin-right: 10vw;
+}
+nav .menu ul li{
+    color: black;
+    font-weight: 2vw ;
+    font-size: 1.5vw;
+}
+nav .menu ul li:hover{
+    color: white;
+    cursor: pointer;
+    font-weight: 1.9vw;
+    font-size: 1.4vw;
+    text-decoration: none;
+}
+nav .menu ul a{
+    text-decoration: none;
+}
+nav i{
+    font-size: 1.6vw;
+    display: none;
+}
+.content{
+    width: 100%;
+    height: calc(100% - 90px);
+    display: flex;
+}
+.left{
+    width: 50%;
+    height: 100%;
+    padding-left: 12vw;
+    padding-top: 30vh;
+}
+.left h2{
+    font-size: 4vw;
+}
+.left h1{
+    font-size: 5.5vw;
+}
+.left h1 span{
+    color: #fbb6bc;
+}
+.left h4{
+    font-size: 1.8vw;
+    opacity: .8;
+}
+.left button{
+    padding: 1vw;
+    font-size: 1.2vw;
+    margin-top: 1.5vw;
+    color: white;
+    background-color: #fbb6bc;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.left button:hover{
+    background-color: white;
+    color: #f76672;
+    border: 1px solid #f699a1;
+}
+.connect{
+    margin-top: 2vw;
+    font-size: 2.3vw;
+}
+.connect i{
+    color: #f699a1;
+    border: 1px solid #f76672;
+    margin-right: 1.5vw;
+    cursor: pointer;
+}
+.connect i:hover{
+    color: rgb(46, 1, 8);
+}
+.connect a{
+    text-decoration: none;
+}
+.right{
+    width: 50%;
+    height: 100%;
+}
+.right img{
+    padding-top: 20vh;
+    margin-left: 3vw;
+}
+#content2{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 3vw;
+}
+.abgirl{
+    width: 45%;
+    height: 100%;
+    margin-left: 5vw;
+}
+.insidecontent{
+    width: 55%;
+    height: 100%;
+    margin-top: 5vw;
+}
+.insidecontent h1{
+    font-size: 4vw;
+    margin-bottom: 1vw;
+}
+.insidecontent h1 span{
+    color: #fbb6bc;
+}
+.insidecontent p{
+    font-size: 1.5vw;
+    text-align: justify;
+    margin-right: 7vw;
+    margin-bottom: 1vw;
+}
+.insidecontent h5{
+    font-size: 1.5vw;
+    text-align: justify;
+    margin-right: 7vw;
+    margin-bottom: 1vw;
+}
+.insidecontent h5 span{
+    color: #fbb6bc;
+    font-size: 1.65vw;
+}
+.skills{
+    display: flex;
+}
+.html{
+    text-align: center;
+    margin-right: 1vw;
+}
+.html i{
+    font-size: 2.3vw;
+    color: #f699a1;
+    border: 1px solid #f76672;
+    cursor: pointer;
+}
+.html h6{
+    margin-top: 1vh;
+    font-size: 1vw;
+    display: none;
+    font-family: Georgia, 'Times New Roman', Times, serif ;
+    color: #a4222c;
+}
+.html i:hover + h6{
+    display: block;
+}
+.css{
+    text-align: center;
+    margin-right: 1vw;
+}
+.css i{
+    font-size: 2.3vw;
+    color: #f699a1;
+    border: 1px solid #f76672;
+    cursor: pointer;
+}
+.css h6{
+    margin-top: 1vh;
+    font-size: 1vw;
+    display: none;
+    font-family: Georgia, 'Times New Roman', Times, serif ;
+    color: #a4222c;
+}
+.css i:hover + h6{
+    display: block;
+}
+.js{
+    text-align: center;
+    margin-right: 1vw;
+}
+.js i{
+    font-size: 2.3vw;
+    color: #f699a1;
+    border: 1px solid #f76672;
+    cursor: pointer;
+}
+.js h6{
+    margin-top: 1vh;
+    font-size: 1vw;
+    display: none;
+    font-family: Georgia, 'Times New Roman', Times, serif ;
+    color: #a4222c;
+}
+.js i:hover + h6{
+    display: block;
+}
+.java{
+    text-align: center;
+    margin-right: 1vw;
+}
+.java i{
+    font-size: 2.3vw;
+    color: #f699a1;
+    border: 1px solid #f76672;
+    cursor: pointer;
+}
+.java h6{
+    margin-top: 1vh;
+    font-size: 1vw;
+    display: none;
+    font-family: Georgia, 'Times New Roman', Times, serif ;
+    color: #a4222c;
+}
+.java i:hover + h6{
+    display: block;
+}
+.sql{
+    text-align: center;
+    margin-right: 1vw;
+}
+.sql i{
+    font-size: 2.3vw;
+    color: #f699a1;
+    border: 1px solid #f76672;
+    cursor: pointer;
+}
+.sql h6{
+    margin-top: 1vh;
+    font-size: 1vw;
+    font-family: Georgia, 'Times New Roman', Times, serif ;
+    color: #a4222c;
+    display: none;
+}
+.sql i:hover + h6{
+    display: block;
+}
+#experience{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    margin-bottom: 3vh;
+}
+.projects h1{
+    font-size: 4vw;
+    margin-top: 1vw;
+}
+.projects h1 span{
+    color: #fbb6bc;
+}
+.expcontent{
+    width: 50%;
+    height: 100%;
+    margin-top: 5vw;
+    margin-left: 10vw;
+}
+.expcontent h2{
+    color: #fbb6bc;
+    font-size: 2vw;
+    margin-top: 1vw;
+}
+.expcontent p{
+    margin-top: 1vw;
+    font-size: 1.5vw;
+    text-align: justify;
+}
+.expcontent h3{
+    font-size: 2vw;
+}
+.expimg{
+    width: 50%;
+    height: 100%;
+    margin-left: 8vw;
+}
+#contact{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    margin-top: 10vh;
+}
+.connectimg{
+    width: 50%;
+    height: 100%;
+    margin-left: 10vw;
+    margin-top: -4vh;
+}
+.contactme{
+    width: 50%;
+    height: 100%;
+    margin-top: 10vh;
+}
+.contactme h1{
+    font-size: 4vw;
+    margin-bottom: 1vw;
+}
+.contactme h1 span{
+    color: #fbb6bc;
+}
+.contactme p{
+    margin-bottom: 1vw;
+    font-size: 1.5vw;
+}
+.mail i{
+    font-size: 2.3vw;
+    color: #f699a1;
+    border: 1px solid #f76672;
+    cursor: pointer; 
+}
+.mail a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.5vw;
+    margin-left: 1vw;
+}
+.mail a:hover{
+    color: #fbb6bc;
+}
+.wssp{
+    margin-top: 1.3vh;
+}
+.wssp i{
+    font-size: 2.3vw;
+    color: #f699a1;
+    border: 1px solid #f76672;
+    cursor: pointer; 
+}
+.wssp a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.5vw;
+    margin-left: 1vw;
+}
+.wssp a:hover{
+    color: #fbb6bc;
+}
+footer{
+    width: 100%;
+    height: 130px;
+    background-color: #f7d4d7;
+    text-align: center;
+    padding: 2vw;
+    border-top: 1px solid #fbb6bc;
+}
+footer a{
+    text-decoration: none;
+    margin-right: 1vw;
+}
+footer a i{
+    font-size: 2.3vw;
+    color: rgb(179, 44, 67);
+    border: 1px solid rgb(0, 0, 0);
+    cursor: pointer; 
+}
+footer a i:hover{
+    color: rgb(46, 1, 8);
+}
+footer p{
+    margin-top: 2vh;
+    font-size: 1.4vw;
+}
+@media screen and (max-width: 1000px) {
+    nav .menu ul li{
+        font-size: 1.7vw;
+        font-weight: 1.6vw ;
+    }  
+    nav .menu ul li:hover{
+        font-weight: 1.5vw;
+        font-size: 1.6vw;
+    }
+}
+@media screen and (max-width: 800px) {
+    nav .menu ul li{
+        font-size: 1.9vw;
+        font-weight: 1.7vw ;
+    }
+    nav .menu ul li:hover{
+        font-weight: 1.6vw;
+        font-size: 1.8vw;
+    }
+}
+@media screen and (max-width: 630px) {
+    nav .menu ul i{
+        display: block;
+        font-size: 25vw;
+    }
+    nav .menu ul{
+        display: none;
+    }
+
+    
+}
+
